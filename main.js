@@ -56,13 +56,13 @@ map.on('load', function () {
         }); */
     map.addSource('vector', {
         type: 'vector',
-        tiles: ['./out/{z}/{x}/{y}.pbf'],
+        tiles: ['https://atsu0919.github.io/hakodate_bluemap_maplibre/out/{z}/{x}/{y}.pbf'],
     });
     map.addLayer({
         id: 'vector',
         type: 'fill',
         source: 'vector',
-        'source-layer': 'vector',
+        'source-layer': 'kamedahoncho',
         paint:
         { 'fill-opacity': 0.2 },
 
